@@ -1,0 +1,56 @@
+<div class="limiter" >
+    <div class="container-login100" style="background-image: url('../../assets/images/2.jpg');">
+        <div class="wrap-login100 animate__animated animate__backInLeft" >
+            <form class="login100-form validate-form" #form="ngForm" (ngSubmit)="form.form.valid && connection(form)">
+                <span class="login100-form-logo animate__animated animate__flip">
+                   <img style="width: 180px; height: 180px; border-radius: 50%;" src="../../assets/images/1.jpg" alt="">
+                </span>
+
+                <span class="login100-form-title p-b-34 p-t-27 ">
+                    Se connecter
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate = "Nom d'utilisateur" >
+                    <input class="input100" type="text" name="username" placeholder="Nom d'utilisateur" name="username" [(ngModel)]="loginReq.username"  #username="ngModel" required>
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    <div class="alert alert-danger" role="alert" *ngIf="form.submitted && username.invalid">
+                       Username Ou E-mail Obligatoire*
+                      </div>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Mot de passe">
+                    <input class="input100" type="password" name="pass" placeholder="Mot de passe" name="password" [(ngModel)]="loginReq.password" #password="ngModel" required>
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    <div class="alert alert-danger" role="alert" *ngIf="form.submitted && password.invalid">
+                        Password Obligatoire*
+                       </div>
+                </div>
+                
+                <div class="contact100-form-checkbox">
+                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                    <label class="label-checkbox100" for="ckb1">
+                        Se souvenir de moi
+                    </label>
+                </div>
+
+                <div class="container-login100-form-btn animate__animated animate__bounce ">
+                    <button type="submit" class="login100-form-btn"  >
+                        Se connecter
+                    </button>
+                </div>
+
+                <div class="text-center p-t-90">
+                    <a class="txt1" routerLink="/signup">
+                        Vous n'avez pas un compte ?
+                    </a> <br>
+                    <a class="txt1" routerLink="#">
+                        Mot de passe oublié ?
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>

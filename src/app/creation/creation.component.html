@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="limiter">
+    
+    <div class="container-login100" style="background-image: url('../../assets/images/2.jpg');">
+        
+        <div class="wrap-login100">
+            
+            <form class="login100-form validate-form">
+                <span class="login100-form-logo">
+                    <img style="width: 180px; height: 180px; border-radius: 50%;" src="../../assets/images/1.jpg"
+                        alt="">
+                </span>
+    
+                <span class="login100-form-title p-b-34 p-t-27" style="color: white;"> 
+                    Créer votre Propre Marque
+                </span>
+                <div class="wrap-input100 validate-input" data-validate="nom">
+                    <input class="input100" type="text" name="name" placeholder="Nom du produit" [(ngModel)]="produit.nom">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+               
+            
+            <div class="wrap-input100 validate-input" data-validate="prix">
+                <input class="input100" type="text" name="prix" placeholder="prix" [(ngModel)]="produit.prix">
+                <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="couleur">
+                <input class="input100" type="text" name="couleur" placeholder="couleur" [(ngModel)]="produit.couleur">
+                <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02" accept="image/png, image/jpeg">
+                    <label class="input-group-text" for="inputGroupFile02">Image du produit</label>
+                  </div>
+
+                <div class="container-login100-form-btn">
+
+                    <button class="login100-form-btn" style="margin-top: 5px; margin-bottom: 20px;" (click)="ajouterProduit()">
+                        Confirmer
+                    </button>
+
+
+                </div>
+                
+                
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>

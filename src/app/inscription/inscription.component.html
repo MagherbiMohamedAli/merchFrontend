@@ -1,0 +1,75 @@
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('../../assets/images/2.jpg');">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form">
+                <span class="login100-form-logo">
+                    <img style="width: 180px; height: 180px; border-radius: 50%;" src="../../assets/images/1.jpg"
+                        alt="">
+                </span>
+
+                <span class="login100-form-title p-b-34 p-t-27">
+                    S'inscrire
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="nom">
+                    <input class="input100" type="text" name="name" placeholder="Nom" [(ngModel)]="user.nom">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="prenom">
+                    <input class="input100" type="text" name="name" placeholder="Prenom" [(ngModel)]="user.prenom">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Nom d'utilisateur">
+                    <input class="input100" type="text" name="username" placeholder="Nom d'utilisateur"  [(ngModel)]="user.username">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="E-mail">
+                    <input class="input100" type="text" name="email" placeholder="E-mail"  [(ngModel)]="user.email">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <p style="color: white ; margin-bottom: 10px;">Date de naissance :</p>
+                <div class="wrap-input100 validate-input" data-validate="Date de naissance">
+                    <input class="input100" type="date" name="birthdate" placeholder="Date de naissance"  [(ngModel)]="user.datedenaissance">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="codepostal">
+                    <input class="input100" type="text" name="codepostal" placeholder="Code Postal"  [(ngModel)]="user.codepostal">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="adresse">
+                    <input class="input100" type="text" name="adresse" placeholder="Adresse"  [(ngModel)]="user.adresse">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Mot de passe">
+                    <input class="input100" type="password" name="password" placeholder="Mot de passe"  [(ngModel)]="user.password">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    
+                   
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Mot de passe">
+                    <input class="input100" type="password" name="cpassword" placeholder="Confirmer Votre Mot de passe">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    
+                   
+                </div>
+
+                 <a class="txt1" routerLink="/login" style="margin-left: 100px;">
+                        Vous avez déjà un compte ?
+                    </a>
+
+                <div class="container-login100-form-btn">
+                    
+                    <button  (click)="inscrit()" class="login100-form-btn" style="margin-top: 10px;">
+                        S'inscrire
+                    </button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
